@@ -26,7 +26,7 @@ namespace ChatParse
     
         public Form1()
         {
-           //AllocConsole();
+            //AllocConsole();
             Boolean is_init = false;
             using (StreamReader reader = new StreamReader("init.conf"))
             {
@@ -78,7 +78,9 @@ namespace ChatParse
             textBox1.Text = "https://t.me/chat_reference";
             textBox1.ForeColor = Color.Gray;
             backgroundWorker1.WorkerReportsProgress = true;
+            backgroundWorker2.WorkerReportsProgress = true;
             backgroundWorker1.WorkerSupportsCancellation = true;
+            backgroundWorker2.WorkerSupportsCancellation = true;
         }
         Boolean is_work = false;
         String url = "";
@@ -86,56 +88,46 @@ namespace ChatParse
         Boolean is_tel = false;
         String outp = "";
 
-        public delegate void MyDelegate(Label myControl, String[] myArg2);
+        public delegate void MyDelegate(Label myControl);
         private void button1_Click(object sender, EventArgs e)
         {
             //Console.WriteLine("butt");
-
             url  = textBox1.Text;
             is_tel = checkBox1.Checked;
-           
+            backgroundWorker2.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker2_ProgressChanged);
             if (backgroundWorker1.IsBusy != true)
             {
                 backgroundWorker1.RunWorkerAsync();
-            }           
+            }
             is_work = true;
-            object[] myArray = new object[2];
-            String[] work = { "Обработка", "Обработка.", "Обработка..", "Обработка..." };
-            myArray[0] = label3;
-            myArray[1] = work;
-            label3.BeginInvoke(new MyDelegate(DelegateMethod), myArray);
-
+            button1.Enabled = false;
+            if (backgroundWorker2.IsBusy != true)
+            {
+                backgroundWorker2.RunWorkerAsync();
+            }
+            if (backgroundWorker2.WorkerSupportsCancellation == true)
+            {
+                backgroundWorker2.CancelAsync();
+            }
             if (backgroundWorker1.WorkerSupportsCancellation == true)
             {
                 backgroundWorker1.CancelAsync();
             }
-            //label3.EndInvoke();
             //if (errors.Contains("FileNotFoundError"))
             //    errors = "";
-            
+
             //Console.WriteLine("tik");
         }
 
-        public void DelegateMethod(Label label, String[] work)
+        public void DelegateMethod(Label label)
         {
-            int i = 0;
-            while (is_work)
-            {
-                if (i > 3) i = 0;
-                label3.Text = work[i];
-                label3.Refresh();
-                //Console.WriteLine("loop");
-                Thread.Sleep(500);
-                i++;
-            }
-            //Console.WriteLine(outp);
+            button1.Enabled = true;
             label2.Text = errors;
             label3.Text = "Выполнено";
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-            
+        {            
             //Console.WriteLine("work");
             ProcessStartInfo startInfo = new ProcessStartInfo("python");
 
@@ -161,31 +153,40 @@ namespace ChatParse
             is_work = false;
             //Console.WriteLine("end");
         }
-        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            if (e.Cancelled == true)
-            {
-                label3.Text = "Canceled!";
-            }
-            else if (e.Error != null)
-            {
-                label3.Text = "Error: " + e.Error.Message;
-            }
-            else
-            {
-                label3.Text = "Done!";
-            }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBox1_Enter_1(object sender, EventArgs e)
         {
             textBox1.Text = null;
             textBox1.ForeColor = Color.Black;
+        }
+
+        private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
+        {
+            String[] work = { "Обработка", "Обработка.", "Обработка..", "Обработка..." };
+            int i = 0;
+            while(is_work)
+            {
+                if (i > 3) i = 0;
+                //Console.WriteLine("work2");
+                backgroundWorker2.ReportProgress(i);
+                i++;
+                Thread.Sleep(500);
+            }
+            object[] myArray = new object[1];
+            myArray[0] = label3;
+            label3.BeginInvoke(new MyDelegate(DelegateMethod), myArray);
+        }
+        private void backgroundWorker2_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            int i = e.ProgressPercentage;
+            //Console.WriteLine("pr" + i);
+            if (i > 3) i = 0;
+            String[] work = { "Обработка", "Обработка.", "Обработка..", "Обработка..." };
+            label3.Text = work[i];
+            //label3.Refresh();
+            Refresh();
+            //Console.WriteLine("loop");
+            
         }
     }
 }

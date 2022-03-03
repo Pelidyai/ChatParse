@@ -26,3 +26,4 @@ D:\Dmitriy\Git\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.csproj.Co
 D:\Dmitriy\Git\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.dll
 D:\Dmitriy\Git\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.pdb
 D:\Dmitriy\Git\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.genruntimeconfig.cache
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.csprojAssemblyReference.cache
