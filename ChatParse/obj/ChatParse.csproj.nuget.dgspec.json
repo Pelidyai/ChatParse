@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj": {}
+    "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj": {}
   },
   "projects": {
-    "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj": {
+    "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj",
+        "projectUniqueName": "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj",
         "projectName": "ChatParse",
-        "projectPath": "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj",
-        "packagesPath": "C:\\Users\\dima-\\.nuget\\packages\\",
-        "outputPath": "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\obj\\",
+        "projectPath": "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj",
+        "packagesPath": "C:\\Users\\Домик\\.nuget\\packages\\",
+        "outputPath": "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dima-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Домик\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

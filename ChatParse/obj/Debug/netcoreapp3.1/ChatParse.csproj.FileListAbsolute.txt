@@ -13,3 +13,17 @@ D:\PickAim\Projects\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.csproj
 D:\PickAim\Projects\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.dll
 D:\PickAim\Projects\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.pdb
 D:\PickAim\Projects\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.genruntimeconfig.cache
+D:\Dmitriy\Git\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\ChatParse.exe
+D:\Dmitriy\Git\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\ChatParse.deps.json
+D:\Dmitriy\Git\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\ChatParse.runtimeconfig.json
+D:\Dmitriy\Git\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\ChatParse.runtimeconfig.dev.json
+D:\Dmitriy\Git\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\ChatParse.dll
+D:\Dmitriy\Git\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\ChatParse.pdb
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.Form1.resources
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.csproj.GenerateResource.cache
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.AssemblyInfoInputs.cache
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.AssemblyInfo.cs
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.csproj.CoreCompileInputs.cache
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.dll
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.pdb
+D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.genruntimeconfig.cache

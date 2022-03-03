@@ -26,16 +26,44 @@ namespace ChatParse
     
         public Form1()
         {
-            //AllocConsole();
+           //AllocConsole();
             Boolean is_init = false;
             using (StreamReader reader = new StreamReader("init.conf"))
             {
                 string text = reader.ReadToEnd();
-                if(text=="0")
+                if(text=="")
                 {
-                    ProcessStartInfo psi;
-                    psi = new ProcessStartInfo("cmd", @"pip3 install telethon");
-                    Process.Start(psi);
+                    //ProcessStartInfo psi;
+                    //psi = new ProcessStartInfo("cmd", "pip3 install telethon");
+                    //Process.Start(psi);
+                    ////Console.WriteLine()
+                    
+
+                    ProcessStartInfo startInfo = new ProcessStartInfo("cmd");
+
+                    
+                    //dir = "D:/PickAim/Projects/ChatParser/";
+                    string script = "pip3 install telethon";
+                    //Console.WriteLine(dir);
+                    //Console.WriteLine(script);
+                    startInfo.Arguments = script/*$"\"{script}\"\"{url}\""*/;
+                    startInfo.UseShellExecute = false;
+                    startInfo.CreateNoWindow = false;
+                    startInfo.RedirectStandardError = true;
+                    startInfo.RedirectStandardInput = true;
+                    startInfo.RedirectStandardOutput = true;
+
+                    //Console.WriteLine("start1");
+                    string er;
+                    using (var process = Process.Start(startInfo))
+                    {
+                        
+                        //Console.WriteLine("start2");
+                        process.StandardInput.WriteLine(script);
+                        process.StandardInput.Close();
+                        er = process.StandardOutput.ReadToEnd();
+                    }
+                    //Console.WriteLine(er);
                     is_init = true;
                 }
             }
@@ -43,7 +71,7 @@ namespace ChatParse
             {
                 using (StreamWriter writer = new StreamWriter("init.conf", false))
                 {
-                    writer.WriteLine("1");
+                    writer.Write("1");
                 }
             }
             InitializeComponent();
@@ -65,6 +93,7 @@ namespace ChatParse
 
             url  = textBox1.Text;
             is_tel = checkBox1.Checked;
+           
             if (backgroundWorker1.IsBusy != true)
             {
                 backgroundWorker1.RunWorkerAsync();
