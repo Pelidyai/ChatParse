@@ -1,0 +1,14 @@
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Release\netcoreapp3.1\ChatParse.exe
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Release\netcoreapp3.1\ChatParse.deps.json
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Release\netcoreapp3.1\ChatParse.runtimeconfig.json
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Release\netcoreapp3.1\ChatParse.runtimeconfig.dev.json
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Release\netcoreapp3.1\ChatParse.dll
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Release\netcoreapp3.1\ChatParse.pdb
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.Form1.resources
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.csproj.GenerateResource.cache
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.AssemblyInfoInputs.cache
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.AssemblyInfo.cs
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.csproj.CoreCompileInputs.cache
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.dll
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.pdb
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Release\netcoreapp3.1\ChatParse.genruntimeconfig.cache
