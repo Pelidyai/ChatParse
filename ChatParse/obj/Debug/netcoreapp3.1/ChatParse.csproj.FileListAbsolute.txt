@@ -28,3 +28,7 @@ D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.dll
 D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.pdb
 D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.genruntimeconfig.cache
 D:\Dmitriy\Git\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.csprojAssemblyReference.cache
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+D:\PickAim\Projects\ChatParse\ChatParse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+D:\PickAim\Projects\ChatParse\ChatParse\obj\Debug\netcoreapp3.1\ChatParse.csproj.CopyComplete

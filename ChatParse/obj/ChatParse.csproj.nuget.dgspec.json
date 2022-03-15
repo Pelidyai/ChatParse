@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj": {}
+    "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj": {}
   },
   "projects": {
-    "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj": {
+    "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj",
+        "projectUniqueName": "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj",
         "projectName": "ChatParse",
-        "projectPath": "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\ChatParse.csproj",
-        "packagesPath": "C:\\Users\\Домик\\.nuget\\packages\\",
-        "outputPath": "D:\\Dmitriy\\Git\\ChatParse\\ChatParse\\obj\\",
+        "projectPath": "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\ChatParse.csproj",
+        "packagesPath": "C:\\Users\\dima-\\.nuget\\packages\\",
+        "outputPath": "D:\\PickAim\\Projects\\ChatParse\\ChatParse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Домик\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dima-\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
